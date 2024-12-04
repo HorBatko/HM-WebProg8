@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './ExpenseDate.module.css';
+import css from './ExpenseDate.module.css'
 
 const ExpenseDate = ({ date }) => {
   const month = date.toLocaleString('en-US', { month: 'long' });
@@ -7,10 +8,10 @@ const ExpenseDate = ({ date }) => {
   const year = date.getFullYear();
 
   return (
-    <div className="expense-date">
-      <div className="expense-date__month">{month}</div>
-      <div className="expense-date__year">{year}</div>
-      <div className="expense-date__day">{day}</div>
+    <div className={css.expenseDate}>
+      <div className={css.expenseDateMonth}>{month}</div>
+      <div className={css.expenseDateYear}>{year}</div>
+      <div className={css.expenseDateDay}>{day}</div>
     </div>
   );
 };

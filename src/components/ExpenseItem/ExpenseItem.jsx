@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import ExpenseDate from '../ExpenseDate/ExpenseDate';
-import './ExpenseItem.module.css';
+import css from './ExpenseItem.module.css'
 
 const ExpenseItem = ({ title, amount, date }) => {
   return (
-    <div className="expense-item">
+    <div className={css.expenseItem}>
       <ExpenseDate date={date} />
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">${amount}</div>
-      </div>
+      <div className={css.expenseItemDescription}>{title}</div>
+        <div className={css.expenseItemtitle}></div>
+        <div className={css.expenseItemPrice}>${amount}</div>
+     
     </div>
   );
 };

@@ -1,21 +1,36 @@
 .expenseItem {
     display: flex;
-    justify-content: space-between;
+ 
     align-items: center;
     margin: 1rem 0;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 12px;
+    background: #3a3a3a;
   }
   
   .expenseItemDescription {
-    display: flex;
+    align-items: start;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .expenseItemtitle{
     
   }
   
+  
   .expenseItemPrice {
+    margin-left: auto;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #3a3a3a;
+    color: #f6f6f6;
+    display: flex;
+    background: #3f0066;
+    padding: 0.5rem;
+    border: 2px solid hsl(0, 0%, 96%);
+    border-radius: 12px;
   }
-  
+
+ 

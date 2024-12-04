@@ -1,5 +1,7 @@
 import Expenses from './components/Expenses/Expenses';
 import cssCard from './components/Card/Card.module.css'
+import './App.css'
+
 
 const App = () => {
   const expenses = [
@@ -10,7 +12,7 @@ const App = () => {
   ];
 
   return (
-    <div className={cssCard.cardBG}>
+       <div className={cssCard.cardBG}>
       <Expenses items={expenses} />
     </div>
   );
