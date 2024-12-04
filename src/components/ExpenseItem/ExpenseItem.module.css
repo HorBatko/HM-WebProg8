@@ -1,4 +1,4 @@
-.expense-item {
+.expenseItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,13 +8,13 @@
     border-radius: 12px;
   }
   
-  .expense-item__description {
+  .expenseItemDescription {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
   
-  .expense-item__price {
+  .expenseItemPrice {
     font-size: 1.25rem;
     font-weight: bold;
     color: #3a3a3a;
