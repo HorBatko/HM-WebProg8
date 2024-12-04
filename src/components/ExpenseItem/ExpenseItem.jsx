@@ -1,14 +1,14 @@
-import ExpenseDate from "../ExpenseDate/ExpenseDate";
-import PropTypes from "prop-types";
-import css from './ExpenseItem.module.css'
+import PropTypes from 'prop-types';
+import ExpenseDate from '../ExpenseDate/ExpenseDate';
+import './ExpenseItem.module.css';
 
-let ExpenseItem = ({ title, amount, date }) => {
+const ExpenseItem = ({ title, amount, date }) => {
   return (
-    <div className={css.expenseItem}>
-      <ExpenseDate bottomdDate={date} />
-      <div className={css.expenseItemDescription}>
+    <div className="expense-item">
+      <ExpenseDate date={date} />
+      <div className="expense-item__description">
         <h2>{title}</h2>
-        <div className={css.expenseItemPrice}>{amount}</div>
+        <div className="expense-item__price">${amount}</div>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
-import ExpenseItem from '../ExpenseItem/ExpenseItem'
 import PropTypes from 'prop-types';
-
+import ExpenseItem from '../ExpenseItem/ExpenseItem';
 
 const Expenses = ({ items }) => {
   return (
@@ -29,4 +28,3 @@ Expenses.propTypes = {
 };
 
 export default Expenses;
-

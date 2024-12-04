@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import './ExpenseDate.module.css';
 
-const ExpenseDate = (bottomdDate) => {
-  const month = bottomdDate.toLocaleString('en-US', { month: 'long' });
-  const day = bottomdDate.toLocaleString('en-US', { day: '2-digit' });
-  const year = bottomdDate.getFullYear();
+const ExpenseDate = ({ date }) => {
+  const month = date.toLocaleString('en-US', { month: 'long' });
+  const day = date.toLocaleString('en-US', { day: '2-digit' });
+  const year = date.getFullYear();
 
   return (
     <div className="expense-date">
@@ -12,6 +13,10 @@ const ExpenseDate = (bottomdDate) => {
       <div className="expense-date__day">{day}</div>
     </div>
   );
+};
+
+ExpenseDate.propTypes = {
+  date: PropTypes.instanceOf(Date).isRequired,
 };
 
 export default ExpenseDate;
