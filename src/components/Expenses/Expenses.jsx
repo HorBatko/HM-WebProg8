@@ -4,16 +4,15 @@ import ExpensesFilter from '../ExpensesFilter/ExpensesFilter';
 import ExpensesChart from '../ExpensesChart/ExpensesChart';
 
 const Expenses = ({ items }) => {
-  const [filteredYear, setFilteredYear] = useState('all'); // По умолчанию "Показать все"
+  const [filteredYear, setFilteredYear] = useState('all'); 
 
   const filterChangeHandler = (selectedYear) => {
     setFilteredYear(selectedYear);
   };
 
-  // Логика фильтрации
   const filteredExpenses =
     filteredYear === 'all'
-      ? items // Если выбрано "Показать все", возвращаем весь список
+      ? items 
       : items.filter((expense) => expense.date.getFullYear().toString() === filteredYear);
 
   return (
@@ -21,7 +20,7 @@ const Expenses = ({ items }) => {
       
       <ExpensesFilter selectedYear={filteredYear} onChangeYear={filterChangeHandler} />
       <ExpensesChart expenses={filteredExpenses} />
-      {filteredExpenses.length === 0 ? ( // Проверяем, есть ли данные
+      {filteredExpenses.length === 0 ? ( 
         <p>No expenses found.</p>
       ) : (
         filteredExpenses.map((expense) => (
