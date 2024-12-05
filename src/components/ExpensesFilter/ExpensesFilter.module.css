@@ -1,0 +1,20 @@
+.expensesFilter {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+select{
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+select:hover{
+  padding: 10px;
+}
+  

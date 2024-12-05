@@ -1,0 +1,39 @@
+.newExpense {
+    margin: 1rem;
+    background: #319f7c;
+    padding: 1rem;
+    border-radius: 13px;
+  }
+  
+  .newExpenseControls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .newExpenseControl {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 17px;
+    
+  }
+  
+  .newExpenseActions {
+    text-align: right;
+  }
+  
+  label{
+    margin-bottom: 5px;
+  }
+
+  input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+  }
+
+  .btnCancel{
+    margin-right: 10px;
+  }
